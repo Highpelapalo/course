@@ -11,9 +11,7 @@ services:
 install: "pip install -r requirements.txt"
 
 script: 
-  - "pwd"
-  - "locate Dockerfile"
-  - "docker build --file ~/Dockerfile -t firstimage ."
+  - "docker build --file /home/travis/build/Highpelapalo/course/Dockerfile -t firstimage ."
   - "docker run -p 80:5000 firstimage"
   - "pytest --cov=." 
 
