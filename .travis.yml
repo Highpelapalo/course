@@ -5,6 +5,8 @@ python:
 install: "pip install -r requirements.txt"
 
 script: 
+  - "docker run -p 80:5000 firstimage"
   - "pytest --cov=." 
 
-after_success: coveralls
+after_success:
+  - "coveralls"
