@@ -16,8 +16,9 @@ Welcome to foobar's documentation!
 
 Content
 -------
-`Foo is a cool function <foo.html>`_
-`Bar is also a great function <bar.html>`_
+| `Foo is a cool function <foo.html>`_
+
+| `Bar is also a great function <bar.html>`_
 
 Indices and tables
 ==================
