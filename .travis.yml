@@ -5,6 +5,7 @@ python:
 install: "pip install -r requirements.txt"
 
 script: 
+  - "docker build --file ~/course/day0/Dockerfile -t firstimage ."
   - "docker run -p 80:5000 firstimage"
   - "pytest --cov=." 
 
