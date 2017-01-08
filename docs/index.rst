@@ -20,6 +20,9 @@ Content
 
 | `Bar is also a great function <bar.html>`_
 
+.. automodule:: foobar
+   :members:
+
 Indices and tables
 ==================
 
