@@ -2,4 +2,5 @@ EXAMPLE
 ======
 
 The coolest project of all
-https://travis-ci.org/Highpelapalo/course.svg?branch=master
+
+[![Build Status](https://travis-ci.org/Highpelapalo/course.svg?branch=master)](https://travis-ci.org/Highpelapalo/course)
