@@ -12,7 +12,7 @@ def flapp(request):
 
     def kill_it():
         p.shutdown()
-    request.addfinalizer(kil_it)
+    request.addfinalizer(kill_it)
 
 
 def test_app(flapp):
