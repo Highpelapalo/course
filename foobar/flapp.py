@@ -12,5 +12,5 @@ def run():
     @app.route("/foo")
     def return_foo():
         return foo()
-    app.run()
+    app.run(host='0.0.0.0')
     return app

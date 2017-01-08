@@ -21,7 +21,14 @@ Content
 | `Bar is also a great function <bar.html>`_
 
 .. automodule:: foobar
-   :members:
+
+foo
+---
+.. autofunction:: foobar.foo
+
+bar
+---
+.. autofunction:: foobar.bar
 
 Indices and tables
 ==================
