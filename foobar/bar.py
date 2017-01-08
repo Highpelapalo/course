@@ -1,2 +1,2 @@
 def bar():
-    print('bar')
+    return 'bar'
