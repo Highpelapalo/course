@@ -1,12 +1,11 @@
 import pytest
 import requests
-import foobar
 from multiprocessing import Process
 
 @pytest.fixture
 def flapp(request):
     def set_up():
-        foobar.flapp.run()
+        flapp.run()
     p = Process(target=set_up)
     p.start()
 
