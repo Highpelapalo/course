@@ -1,0 +1,9 @@
+build:
+    context: .
+    dockerfile: Dokcerfile
+image: firstimage
+
+build:
+    context: .
+    dockerfile: DockerfileDB
+image: secondimage
