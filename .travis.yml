@@ -10,7 +10,7 @@ services:
 
 install:
   - "pip install -r requirements.txt"
-  - "apt-get -y install python3-psycopg2"
+  - "sudo apt-get -y install python3-psycopg2"
 
 script: 
   - "docker build --file /home/travis/build/Highpelapalo/course/Dockerfile -t firstimage ."
