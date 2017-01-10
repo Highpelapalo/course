@@ -6,7 +6,7 @@ def foo():
     if 1 == 2:
         pass
     try:
-        conn = psycopg2.connect("dbname='docker' user='postgres' host='{host}'".format(host=DB_CONTAINER))
+        conn = psycopg2.connect("dbname='docker' user='docker_user' host='{host}'".format(host=DB_CONTAINER))
         cur = conn.cursor()
         cur.execute("""SELECT foo from foobar where foo = 'foo';""")
         rows = cur.fetchall()

@@ -10,11 +10,13 @@ services:
 
 install:
   - "pip install -r requirements.txt"
-  - "sudo apt-get -y install python3-psycopg2"
+  - "sudo apt install libpq-dev python3-dev"
 
 script: 
-  - "docker build --file /home/travis/build/Highpelapalo/course/Dockerfile -t firstimage ."
-  - "docker run -d -p 80:5000 firstimage"
+  #- "docker build --file /home/travis/build/Highpelapalo/course/Dockerfile -t firstimage ."
+  #- "docker run -d -p 80:5000 firstimage"
+  - "./docker_build"
+  - "./docker_run"
   - "pytest --cov=." 
 
 after_success:
